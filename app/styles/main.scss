@@ -2,16 +2,30 @@ body{
   margin: 0;
   min-height: 100vh;
   height: 100%;
+  font-size: 16px;
 }
+
 .wrapper{
   display: flex;
   min-height: 100vh;
   height: 100%;
+
   &__leftPanel{
     width: 300px;
     min-height: 100vh;
     background-color: red;
     height: 100%;
+    &__top{
+      &--image{
+
+      }
+      &--version{
+
+      }
+      &--title{
+        font-size: 2rem;
+      }
+    }
   }
   &__rightPanel{
     flex-grow: 100;
