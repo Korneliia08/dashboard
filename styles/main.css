@@ -1,0 +1,219 @@
+body {
+  margin: 0;
+  min-height: 100vh;
+  height: 100%;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+}
+
+div {
+  box-sizing: border-box;
+}
+
+.wrapper {
+  display: flex;
+  min-height: 100vh;
+  height: 100%;
+}
+@media (max-width: 1150px) {
+  .wrapper {
+    flex-direction: column;
+  }
+}
+.wrapper__leftPanel {
+  background: #FFFFFF;
+  max-width: 306px;
+  min-height: 100vh;
+  height: 100%;
+  flex-shrink: 10;
+  flex-grow: 140;
+  position: relative;
+}
+@media (max-width: 1200px) {
+  .wrapper__leftPanel {
+    max-width: 250px;
+  }
+}
+@media (max-width: 1150px) {
+  .wrapper__leftPanel {
+    max-width: 100%;
+    height: 60px;
+    min-height: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.wrapper__leftPanel__top {
+  height: 80px;
+}
+@media (max-width: 1200px) {
+  .wrapper__leftPanel__top {
+    height: 70px;
+  }
+}
+.wrapper__leftPanel__top h1 {
+  display: flex;
+  justify-content: center;
+  column-gap: 5px;
+  align-items: flex-end;
+}
+@media (max-width: 1150px) {
+  .wrapper__leftPanel__top h1 {
+    margin: 0;
+  }
+}
+.wrapper__leftPanel__top--image {
+  margin-right: 4px;
+  position: relative;
+  top: 2px;
+}
+.wrapper__leftPanel__top--version {
+  font-size: 10px;
+  position: relative;
+  bottom: 3px;
+}
+.wrapper__leftPanel__top--title {
+  font-size: 26px;
+  font-weight: bold;
+}
+@media (max-width: 1200px) {
+  .wrapper__leftPanel__top--title {
+    font-size: 23px;
+  }
+}
+.wrapper__leftPanel__hamburger {
+  display: none;
+  flex-direction: column;
+  column-gap: 10px;
+  row-gap: 7px;
+}
+@media (max-width: 1150px) {
+  .wrapper__leftPanel__hamburger {
+    display: flex;
+    margin: 10px;
+    cursor: pointer;
+  }
+}
+.wrapper__leftPanel__hamburger > div {
+  width: 20px;
+  height: 2px;
+  background: black;
+  transition: 300ms;
+  transform: rotate(0) translate(0, 0);
+}
+.wrapper__leftPanel__hamburger--open > div:nth-child(1) {
+  transform: rotate(45deg) translate(7px, 10px);
+}
+.wrapper__leftPanel__hamburger--open > div:nth-child(2) {
+  width: 0;
+}
+.wrapper__leftPanel__hamburger--open > div:nth-child(3) {
+  transform: rotate(-45deg) translate(2px, -5px);
+}
+.wrapper__leftPanel__menu {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  align-items: center;
+  justify-content: center;
+  transition: left 300ms ease-in-out;
+}
+@media (max-width: 1300px) {
+  .wrapper__leftPanel__menu {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+@media (max-width: 1150px) {
+  .wrapper__leftPanel__menu {
+    position: absolute;
+    top: 70px;
+    left: -250px;
+    z-index: 100;
+    box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.62);
+    background: #FFFFFF;
+  }
+}
+.wrapper__leftPanel__menu--open {
+  left: 0;
+}
+.wrapper__leftPanel__menu a {
+  box-sizing: border-box;
+  width: 90%;
+  max-width: 250px;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+  padding: 10px;
+  border-radius: 10px;
+}
+.wrapper__leftPanel__menu a:hover {
+  cursor: pointer;
+  background: rgba(89, 50, 234, 0.27);
+}
+.wrapper__leftPanel__menu a.selected {
+  background: #5932EA;
+  color: white;
+}
+.wrapper__leftPanel__menu a.selected:hover {
+  cursor: pointer;
+  background: #5932EA;
+}
+.wrapper__leftPanel__menu a div {
+  display: flex;
+  align-items: center;
+  column-gap: 15px;
+}
+.wrapper__leftPanel__menu a div span {
+  color: #9197B3;
+}
+.wrapper__leftPanel__bottom {
+  position: absolute;
+  bottom: 40px;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 1150px) {
+  .wrapper__leftPanel__bottom {
+    position: static;
+    width: auto;
+    padding-right: 10px;
+  }
+}
+.wrapper__leftPanel__bottom__panel {
+  display: flex;
+  height: min-content;
+}
+.wrapper__leftPanel__bottom__panel__left {
+  padding-right: 10px;
+}
+.wrapper__leftPanel__bottom__panel__right {
+  display: flex;
+  flex-direction: column;
+}
+@media (max-width: 750px) {
+  .wrapper__leftPanel__bottom__panel__right {
+    display: none;
+  }
+}
+.wrapper__leftPanel__bottom__panel__right h5 {
+  margin: 0;
+  font-size: 14px;
+}
+.wrapper__leftPanel__bottom__panel__right span {
+  font-size: 12px;
+  color: #757575;
+}
+.wrapper__rightPanel {
+  flex-grow: 100;
+  min-height: 100vh;
+  height: 100%;
+  background-color: #FAFBFF;
+}

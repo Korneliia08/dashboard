@@ -1,0 +1,52 @@
+.finder {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.finder__input {
+  padding-left: 45px;
+  height: 38px;
+  width: 216px;
+  background: #F9FBFF;
+  border: none;
+}
+.finder__input::placeholder {
+  color: #B5B7C0;
+}
+.finder__image {
+  position: absolute;
+  left: 7px;
+}
+
+.table {
+  margin-left: 30px;
+}
+@media (max-width: 500px) {
+  .table {
+    margin-left: 0px;
+  }
+}
+.table__button {
+  padding: 5px;
+  border-radius: 5px;
+  height: 29px;
+  min-width: 80px;
+}
+.table__button--green {
+  background: rgba(22, 192, 152, 0.38);
+  color: #008767;
+  border: 1px solid #008767;
+}
+.table__button--green:hover {
+  cursor: pointer;
+  background: rgba(27, 244, 191, 0.38);
+}
+.table__button--red {
+  background: #FFC5C5;
+  color: #DF0404;
+  border: 1px solid #DF0404;
+}
+.table__button--red:hover {
+  cursor: pointer;
+  background: #f39696;
+}

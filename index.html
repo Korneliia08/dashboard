@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+<head>
+  <title>Dashboard</title>
+  
+  <link rel="stylesheet" type="text/css" href="styles/main.css">
+  
+  <link rel="stylesheet" type="text/css" href="styles/table.css">
+  
+  <link rel="stylesheet" type="text/css" href="styles/ui.css">
+  
+  <link rel="stylesheet" type="text/css" href="styles/fonts.css">
+</head>
+<body>
+  <div class="wrapper">
+    <div class="wrapper__leftPanel">
+      <div class="top wrapper__leftPanel__top">
+        <h1><img class="wrapper__leftPanel__top--image" src="assets/icon/logo.svg"><span class="wrapper__leftPanel__top--title">Dashboard</span><span class="wrapper__leftPanel__top--version">v.01</span></h1>
+      </div>
+      <div class="wrapper__leftPanel__hamburger" id="hamburgerButton">
+        <div></div>
+        
+        <div></div>
+        
+        <div></div>
+      </div>
+      <nav class="wrapper__leftPanel__menu" id="menuPanel"><a class="collapse">
+            <div><img src="assets/icon/dashboard.svg"><span>Dashboard</span></div></a>
+        <a class="collapse">
+            <div><img src="assets/icon/product.svg"><span>Product</span></div><img src="assets/icon/arrow.svg"></a>
+        <a class="collapse selected">
+            <div><img src="assets/icon/person.svg"><span>Customers</span></div><img src="assets/icon/arrowWhite.svg"></a>
+        <a class="collapse">
+            <div><img src="assets/icon/income.svg"><span>Income</span></div><img src="assets/icon/arrow.svg"></a>
+        <a class="collapse">
+            <div><img src="assets/icon/promote.svg"><span>Promote</span></div><img src="assets/icon/arrow.svg"></a>
+        <a class="collapse">
+            <div><img src="assets/icon/help.svg"><span>Help</span></div><img src="assets/icon/arrow.svg"></a>
+      </nav>
+      <div class="wrapper__leftPanel__bottom">
+        <div class="wrapper__leftPanel__bottom__panel">
+          <div class="wrapper__leftPanel__bottom__panel__left"><img src="assets/person.png" alt="Your face image"></div>
+          <div class="wrapper__leftPanel__bottom__panel__right">
+            <h5>Evano</h5><span>Project Manager</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="wrapper__rightPanel">
+      <div class="tableContainer">
+        <h2 class="tableContainer__title">Hello Korneliia<img class="tableContainer__iconHand" src="assets/icon/hand.svg"><span>,</span></h2>
+        <div class="tableContainer__content">
+          <div class="tableContainer__content__top">
+            <div class="tableContainer__content__top__titlePanel">
+              <h2>All Customers</h2><span>Active Members</span>
+            </div>
+            <div class="tableContainer__content__top__serchPanel">
+              <div class="finder">
+                <input class="finder__input" placeholder="Search"><img class="finder__image" src="assets/icon/find.svg">
+              </div>
+            </div>
+          </div>
+          <div class="tableContainer__content__table">
+            <table>
+              <thead>
+                <tr>
+                  <th>Customer Name</th>
+                  <th>Company</th>
+                  <th>Phone Number</th>
+                  <th>Email</th>
+                  <th>Country</th>
+                  <th>Status</th>
+                </tr>
+              </thead>
+              <tbody id="tbody"></tbody>
+            </table>
+          </div>
+          <div class="tableContainer__content__bottom"><span>Showing data 1 to 8 of  256K entries</span>
+            <div class="tableContainer__content__bottom__paggination">
+              <div class="tableContainer__content__bottom__paggination__element"><img class="tableContainer__content__bottom__paggination__element--left" src="assets/icon/paginationArrow.svg"></div>
+              
+              <div class="tableContainer__content__bottom__paggination__element">1</div>
+              
+              <div class="tableContainer__content__bottom__paggination__element">2</div>
+              
+              <div class="tableContainer__content__bottom__paggination__element">3</div>
+              
+              <div class="tableContainer__content__bottom__paggination__element">3</div>
+              
+              <div class="tableContainer__content__bottom__paggination__element tableContainer__content__bottom__paggination__element--dots">...</div>
+              
+              <div class="tableContainer__content__bottom__paggination__element">40</div>
+              
+              <div class="tableContainer__content__bottom__paggination__element"><img class="tableContainer__content__bottom__paggination__element--right" src="assets/icon/paginationArrow.svg"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="scripts/main.js"></script>
