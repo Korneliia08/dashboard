@@ -1,8 +1,19 @@
 doctype html
 html(lang='en')
 head
-    title task2335
+    title Dashboard
+    |
+    |
     link(rel='stylesheet', type='text/css', href='styles/main.css')
+    |
+    |
+    link(rel='stylesheet', type='text/css', href='styles/table.css')
+    |
+    |
+    link(rel='stylesheet', type='text/css', href='styles/ui.css')
+    |
+    |
+    link(rel='stylesheet', type='text/css', href='styles/fonts.css')
     include mixins/mixins.pug
 body
     .wrapper
@@ -11,3 +22,4 @@ body
         div.wrapper__rightPanel
             include components/rightPanel.pug
 
+script(src='scripts/main.js')

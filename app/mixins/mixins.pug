@@ -1,6 +1,10 @@
-mixin menuElement(title,arrowDisplay)
-  a
-    img(src='/assets/')
-    span= title
-    if arrowDisplay
-      img(src='assets/icon/')
+mixin menuElement(title,icon,arrowDisplay,selected)
+    a.collapse(class=(selected === true ? "selected" : ""))
+        div
+            img(src=icon)
+            span= title
+        if arrowDisplay
+            if !selected
+                img(src='assets/icon/arrow.svg')
+            else
+                img(src='assets/icon/arrowWhite.svg')

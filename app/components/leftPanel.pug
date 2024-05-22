@@ -1,30 +1,41 @@
 .top.wrapper__leftPanel__top
     h1
-        img(src='').wrapper__leftPanel__top--image
-        span.wrapper__leftPanel__top--title=Dashboard
+        img(src='assets/icon/logo.svg').wrapper__leftPanel__top--image
+        span.wrapper__leftPanel__top--title.
+            Dashboard
         span.wrapper__leftPanel__top--version v.01
 
+div(id='hamburgerButton' ).wrapper__leftPanel__hamburger
+    div
+    |
+    |
+    div
+    |
+    |
+    div
+nav(id='menuPanel').wrapper__leftPanel__menu
+    +menuElement('Dashboard','assets/icon/dashboard.svg')
+    |
+    |
+    +menuElement('Product','assets/icon/product.svg',true)
+    |
+    |
+    +menuElement('Customers','assets/icon/person.svg',true,true)
+    |
+    |
+    +menuElement('Income','assets/icon/income.svg',true)
+    |
+    |
+    +menuElement('Promote','assets/icon/promote.svg',true)
+    |
+    |
+    +menuElement('Help','assets/icon/help.svg',true)
 
-nav.menu
-    +menuElement('dashboard23')
-    |
-    |
-    +menuElement('dashboard23',true)
-    |
-    |
-    +menuElement('dashboard23',true)
-    |
-    |
-    +menuElement('dashboard23',true)
-    |
-    |
-    +menuElement('dashboard23',true)
-    |
-    |
-    +menuElement('dashboard23',true)
-    |
-    |
-    +menuElement('dashboard23',true)
-.bottom
-    span hej
+.wrapper__leftPanel__bottom
+    div.wrapper__leftPanel__bottom__panel
+        div.wrapper__leftPanel__bottom__panel__left
+            img(src='assets/person.png',alt='Your face image')
+        div.wrapper__leftPanel__bottom__panel__right
+            h5 Evano
+            span Project Manager
 

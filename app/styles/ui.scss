@@ -1,0 +1,61 @@
+.finder {
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  &__input {
+    padding-left: 45px;
+    height: 38px;
+    width: 216px;
+    background: #F9FBFF;
+    border: none;
+
+    &::placeholder {
+      color: #B5B7C0;
+    }
+  }
+
+  &__image {
+    position: absolute;
+    left: 7px;
+  }
+
+}
+
+.table {
+  margin-left: 30px;
+  @media (max-width: 500px) {
+    margin-left: 0px;
+  }
+
+  &__button {
+    padding: 5px;
+    border-radius: 5px;
+    height: 29px;
+    min-width: 80px;
+
+    &--green {
+      $color: #008767;
+      background: rgba(22, 192, 152, 0.38);
+      color: $color;
+      border: 1px solid $color;
+
+      &:hover {
+        cursor: pointer;
+        background: rgba(27, 244, 191, 0.38);
+      }
+    }
+
+    &--red {
+      $color: #DF0404;
+      background: #FFC5C5;
+      color: $color;
+      border: 1px solid $color;
+
+      &:hover {
+        cursor: pointer;
+        background: #f39696;
+      }
+    }
+  }
+}

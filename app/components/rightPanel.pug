@@ -1,1 +1,57 @@
-h1 test2
+.tableContainer
+    h2.tableContainer__title Hello Korneliia
+        img(src='assets/icon/hand.svg').tableContainer__iconHand
+        span ,
+
+    div.tableContainer__content
+        .tableContainer__content__top
+            .tableContainer__content__top__titlePanel
+                h2.
+                    All Customers
+                span.
+                    Active Members
+            .tableContainer__content__top__serchPanel
+                div.finder
+                    input(placeholder='Search').finder__input
+                    img(src='assets/icon/find.svg').finder__image
+
+        .tableContainer__content__table
+            table
+                thead
+                    tr
+                        th Customer Name
+                        th Company
+                        th Phone Number
+                        th Email
+                        th Country
+                        th Status
+                tbody(id='tbody')
+        .tableContainer__content__bottom
+            span Showing data 1 to 8 of  256K entries
+            div.tableContainer__content__bottom__paggination
+                div.tableContainer__content__bottom__paggination__element
+                    img(src='assets/icon/paginationArrow.svg').tableContainer__content__bottom__paggination__element--left
+                |
+                |
+                div.tableContainer__content__bottom__paggination__element 1
+                |
+                |
+                div.tableContainer__content__bottom__paggination__element 2
+                |
+                |
+                div.tableContainer__content__bottom__paggination__element 3
+                |
+                |
+                div.tableContainer__content__bottom__paggination__element 3
+                |
+                |
+                div.tableContainer__content__bottom__paggination__element.tableContainer__content__bottom__paggination__element--dots ...
+                |
+                |
+                div.tableContainer__content__bottom__paggination__element 40
+                |
+                |
+                div.tableContainer__content__bottom__paggination__element
+                    img(src='assets/icon/paginationArrow.svg').tableContainer__content__bottom__paggination__element--right
+
+

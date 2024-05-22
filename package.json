@@ -3,8 +3,10 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "homepage": "https://github.com/Korneliia08/dashboard",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "gh-pages"
   },
   "keywords": [
     "pug",
@@ -15,12 +17,14 @@
   "author": "Korneliia Mushak",
   "license": "ISC",
   "dependencies": {
+    "gh-pages": "^6.1.1",
+    "gulp-gh-pages": "^0.5.4"
   },
   "devDependencies": {
     "gulp": "^5.0.0",
-    "pug": "^3.0.2",
     "gulp-pug": "^5.0.0",
     "gulp-sass": "^5.1.0",
+    "pug": "^3.0.2",
     "sass": "^1.77.2"
   }
 }
